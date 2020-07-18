@@ -10,6 +10,9 @@ const engine = new Styletron();
 const theme = {
   colors: {
     black900: "1d1d1e"
+  },
+  grid: {
+    gutterWidth: "5rem"
   }
 };  
 
@@ -27,7 +30,7 @@ class App extends Component {
           </Div>
           <Div
             textColor = "black900"
-            minH="100vh"
+            minH="50vh"
             w="100vw"
             d="flex"
             flexDir="column"
@@ -61,6 +64,34 @@ class App extends Component {
               <Icon name="BookmarkSolid" size = "20px" color = "white" />
             </Button>
           </Div>
+          <Container
+            w="100rem"
+            d="flex"
+            flexDir="column"
+            align="center"
+            bg = "black"
+            minH = "10rem"
+          >
+          {
+            <Row d = "flex" flexDir = "row" justify = "space-between">
+                <Col size="4" bg = "brand700" p="4rem">
+                  <Div p="1rem" bg = "warning500" rounded = "md" minW = "8rem" minH = "10rem">
+                    Something will go 
+                  </Div>
+                </Col>
+                <Col size="4" bg = "brand700" p="4rem">
+                  <Div p="1rem" bg = "warning500" rounded = "md" minW = "8rem" minH = "10rem">
+                    Something will go 
+                  </Div>
+                </Col>
+                <Col size="4" bg = "brand700" p="4rem">
+                  <Div p="1rem" bg = "warning500" rounded = "md" minW = "8rem" minH = "10rem">
+                    The last thing
+                  </Div>
+                </Col>
+            </Row>
+          }
+          </Container>
         </ThemeProvider>
       </StyletronProvider>
     );
