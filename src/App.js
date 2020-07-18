@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Provider as StyletronProvider, DebugEngine} from 'styletron-react';
 import {Client as Styletron} from 'styletron-engine-atomic';
-import {Div, Button, Icon, Row, Col, Container, StyleReset, ThemeProvider} from 'atomize';
+import {Div, Button, Icon, Text, Row, Col, Container, StyleReset, ThemeProvider} from 'atomize';
 
 const debug = process.env.NODE_ENV === "production" ? void 0 : new DebugEngine();
 //Create a client engine instance
@@ -37,6 +37,17 @@ class App extends Component {
             bg = "success100"
           >
             Mathias Insley
+            <Text
+              d = "flex"
+              textSize = "heading"
+              m = "3rem"
+              w = "70rem"
+              textAlign = "center"
+              hoverTextColor="info700"
+            >
+            Student at Johns Hopkins University. Majoring in Materials Science & Engineering, minoring in Computer Science.
+            How long can this line of text go I have no clue.
+            </Text>
             <Button
               h="2.5rem"
               w="2.5rem"
