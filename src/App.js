@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Provider as StyletronProvider, DebugEngine} from 'styletron-react';
 import {Client as Styletron} from 'styletron-engine-atomic';
-import {Div, Button, Icon, StyleReset, ThemeProvider} from 'atomize';
+import {Div, Button, Icon, Row, Col, Container, StyleReset, ThemeProvider} from 'atomize';
 
 const debug = process.env.NODE_ENV === "production" ? void 0 : new DebugEngine();
 //Create a client engine instance
@@ -19,17 +19,24 @@ class App extends Component {
       <StyletronProvider value = {engine} debug={debug} debugAfterHydration>
         <ThemeProvider theme={theme}>
           <StyleReset />
+          <Div 
+            minH = "8rem"
+            bg = "success100"
+          >
+          
+          </Div>
           <Div
             textColor = "black900"
             minH="100vh"
             w="100vw"
             d="flex"
             flexDir="column"
-            algin="center"
-            textSize="display2"
+            align="center"
+            textSize="display3"
             p={{x:"1rem", y: "4rem"}}
+            bg = "success100"
           >
-            Please work
+            Mathias Insley
             <Button
               h="2.5rem"
               w="2.5rem"
