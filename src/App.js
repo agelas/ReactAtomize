@@ -48,8 +48,8 @@ class App extends Component {
               textAlign = "center"
               hoverTextColor="info700"
             >
-            Student at Johns Hopkins University. Majoring in Materials Science & Engineering, minoring in Computer Science.
-            How long can this line of text go I have no clue.
+            Student at Johns Hopkins University. Majoring in Materials Science & Engineering,
+            minoring in Computer Science.
             </Text>
             <Button
               h="2.5rem"
@@ -75,18 +75,90 @@ class App extends Component {
           {
             <Row d = "flex" flexDir = "row" justify = "space-between">
                 <Col size="4" bg = "brand700" p="4rem">
-                  <Div p="1rem" bg = "warning500" rounded = "md" minW = "8rem" minH = "10rem">
-                    Something will go 
+                  <Div 
+                    d="flex"
+                    p="1rem" 
+                    bg = "warning500" 
+                    rounded = "md" 
+                    minW = "8rem" 
+                    minH = "10rem"
+                    align="center"
+                  >
+                    <Button
+                    prefix={
+                      <Icon
+                        name="Loading2"
+                        size="30px"
+                        color="white"
+                        m={{r: "0.5rem"}}
+                      />
+                    }
+                    bg="info600"
+                    rounded="circle"
+                    p={{r:"1.5rem", l: "1rem"}}
+                    shadow="3"
+                    hoverShadow="4"
+                  >
+                    About
+                  </Button> 
                   </Div>
                 </Col>
                 <Col size="4" bg = "brand700" p="4rem">
-                  <Div p="1rem" bg = "warning500" rounded = "md" minW = "8rem" minH = "10rem">
-                    Something will go 
+                  <Div 
+                    d = "flex"
+                    p="1rem" 
+                    bg = "warning500" 
+                    rounded = "md" 
+                    minW = "8rem" 
+                    minH = "10rem"
+                    align="center"
+                  >
+                    <Button
+                    prefix={
+                      <Icon
+                        name="Github"
+                        size="30px"
+                        color="white"
+                        m={{r: "0.5rem"}}
+                      />
+                    }
+                    bg="info600"
+                    rounded="circle"
+                    p={{r:"1.5rem", l: "1rem"}}
+                    shadow="3"
+                    hoverShadow="4"
+                    >
+                      Github
+                    </Button> 
                   </Div>
                 </Col>
                 <Col size="4" bg = "brand700" p="4rem">
-                  <Div p="1rem" bg = "warning500" rounded = "md" minW = "8rem" minH = "10rem">
-                    The last thing
+                  <Div 
+                    d = "flex"
+                    p="1rem"
+                    bg = "warning500" 
+                    rounded = "md" 
+                    minW = "8rem" 
+                    minH = "10rem" 
+                    align = "center"
+                  >
+                    <Button
+                      prefix={
+                        <Icon
+                          name="Linkedin"
+                          size="30px"
+                          color="white"
+                          m={{r: "0.5rem"}}
+                        />
+                      }
+                      bg="info600"
+                      rounded="circle"
+                      p={{r:"1.5rem", l: "1rem"}}
+                      shadow="3"
+                      hoverShadow="4"
+                    >
+                      LinkedIn
+                    </Button>
                   </Div>
                 </Col>
             </Row>
