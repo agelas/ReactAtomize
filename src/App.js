@@ -36,7 +36,7 @@ class App extends Component {
             bgImg = {bubbleground}
             bgSize = "contain"
           >
-            Mathias Insley
+            Hi, my name's Mathias 
             <Text
               d = "flex"
               textSize = "heading"
@@ -45,8 +45,8 @@ class App extends Component {
               textAlign = "center"
               hoverTextColor="info700"
             >
-            Student at Johns Hopkins University. Majoring in Materials Science & Engineering,
-            minoring in Computer Science.
+            I'm a student at the Johns Hopkins University studying Materials Science & Engineering
+            and Computer Science.
             </Text>
           </Div>
           <Container
@@ -105,6 +105,10 @@ class App extends Component {
                     borderColor="gray400"
                   >
                     <Button
+                    onClick={(e) => {
+                      e.preventDefault();
+                      window.location.href="https://github.com/agelas"
+                    }}
                     prefix={
                       <Icon
                         name="Github"
@@ -137,10 +141,14 @@ class App extends Component {
                     borderColor="gray400"
                   >
                     <Button
+                    onClick = {(e) =>{
+                      e.preventDefault();
+                      window.location.href="https://www.linkedin.com/in/mathias-insley/"
+                    }}
                       prefix={
                         <Icon
                           name="Linkedin"
-                          size="30px"
+                          size="20px"
                           color="white"
                           m={{r: "0.5rem"}}
                         />
