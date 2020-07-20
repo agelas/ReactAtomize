@@ -3,6 +3,7 @@ import {Provider as StyletronProvider, DebugEngine} from 'styletron-react';
 import {Client as Styletron} from 'styletron-engine-atomic';
 import {Div, Button, Icon, Text, Row, Col, Container, StyleReset, ThemeProvider} from 'atomize';
 import bubbleground from './double-bubble-outline/double-bubble-outline.png'
+/*Background image from Toptal Subtle Patterns*/
 
 const debug = process.env.NODE_ENV === "production" ? void 0 : new DebugEngine();
 //Create a client engine instance
@@ -58,12 +59,15 @@ class App extends Component {
             minH = "10rem"
           >
           {
+            //The row is where the three panels with the links are being held. The row has
+            //three columns, each column holds a div, and embedded in the div is the button
             <Row d = "flex" flexDir = "row" justify = "space-between">
                 <Col size="4" bg = "sucess100" p="4rem">
                   <Div 
                     d="flex"
                     p="1rem" 
                     bg = "success100" 
+                    hoverBg = "gray500"
                     rounded = "md" 
                     minW = "8rem" 
                     minH = "10rem"
@@ -96,6 +100,7 @@ class App extends Component {
                     d = "flex"
                     p="1rem" 
                     bg = "success100" 
+                    hoverBg = "gray500"
                     rounded = "md" 
                     minW = "8rem" 
                     minH = "10rem"
@@ -132,6 +137,7 @@ class App extends Component {
                     d = "flex"
                     p="1rem"
                     bg = "sucess100" 
+                    hoverBg = "gray500"
                     rounded = "md" 
                     minW = "8rem" 
                     minH = "10rem" 
