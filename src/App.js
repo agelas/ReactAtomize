@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route, Link, Redirect} from 'react-router-dom';
 import {Provider as StyletronProvider, DebugEngine} from 'styletron-react';
 import {Client as Styletron} from 'styletron-engine-atomic';
 import {Div, Button, Icon, Text, Row, Col, Container, StyleReset, ThemeProvider} from 'atomize';
 import NotFound from './components/NotFound'
+import About from './components/About'
 import bubbleground from './double-bubble-outline/double-bubble-outline.png'
 /*Background image from Toptal Subtle Patterns*/
 
@@ -80,7 +81,12 @@ class App extends Component {
                             border="3px solid"
                             borderColor="gray400"
                           >
-                            <Button
+                            <Button 
+                            onClick={(e) => {
+                              e.preventDefault();
+                              window.location.href="/About"
+                              
+                            }}
                             prefix={
                               <Icon
                                 name="Loading2"
@@ -177,6 +183,7 @@ class App extends Component {
                   }
                   </Container>
                 </Route>
+                <Route path="/About" component={About}/>
                 <Route component={NotFound}/>
               </Switch>
             </Router>
